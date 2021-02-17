@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Abdullah Askar</title>
+<link rel="stylesheet" href="file/home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<div>
+<ul class="ul_menu">
+<li class="li_menu"><a class="a_menu" href="home.html">About ME</a>
+<li class="li_menu"><a class="a_menu" href="language.html">Languages</a></li>
+<li class="li_menu"><a class="a_menu" href="computerskills.html">Computer Skills</a></li>
+<li class="li_menu"><a class="a_menu" href="personalskills.html">Personal Skills</a></li>
+<li class="li_menu"><a class="a_menu" href="courses.html">courses</a></li>
+<li class="li_menu"><a class="a_menu" href="photos.html">Photos</a></li>
+</ul>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 13</div>
+  <img src="home/Abdo4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 13</div>
+  <img src="home/Abdo1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 13</div>
+  <img src="home/Abdo3.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 13</div>
+  <img src="home/Abdo2.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 13</div>
+  <img src="home/Abdo6.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 13</div>
+  <img src="home/Abdo7.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 13</div>
+  <img src="home/Abdo8.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 13</div>
+  <img src="home/Abdo9.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 13</div>
+  <img src="home/Abdo10.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10/ 13</div>
+  <img src="home/Abdo11.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11/ 13</div>
+  <img src="home/Abdo12.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 13</div>
+  <img src="home/Abdo13.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13/ 13</div>
+  <img src="home/Abdo14.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
